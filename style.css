@@ -1,9 +1,12 @@
 
-/* Réglages généraux */
+/* =========================
+   REGLAGES GENERAUX
+========================= */
+
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -12,202 +15,366 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f6f2;
-    color: #254d3d;
+    background: #fffdf7;
+    color: #063c20;
 }
 
-/* Menu de navigation */
-header {
-    background-color: #204b39;
-    padding: 15px 4%;
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.header {
+    background: #003d1c;
+    border-bottom: 3px solid #f5bd19;
 }
 
 .navbar {
+    max-width: 1450px;
+    min-height: 85px;
+    margin: auto;
+    padding: 10px 5%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
 }
 
 .logo {
-    color: white;
-    font-size: 28px;
-}
-
-.menu {
     display: flex;
-    list-style: none;
-    gap: 35px;
-}
-
-.menu a {
+    align-items: center;
     color: white;
-    text-decoration: none;
-    font-size: 15px;
+    gap: 10px;
 }
 
-.menu a:hover {
-    color: #e8d9bd;
+.africa-icon {
+    font-size: 42px;
 }
 
-/* Section d'accueil */
-.accueil {
-    background-color: #e9dfca;
-    text-align: center;
-    padding: 45px 20px 35px;
+.logo-text {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: bold;
 }
 
-.accueil h1 {
-    font-size: 36px;
-    margin-bottom: 12px;
+.logo-text span {
+    color: #ffc928;
 }
 
-.accueil p {
-    color: #777064;
-    font-size: 18px;
-    margin-bottom: 25px;
+.logo-text small {
+    display: block;
+    font-size: 12px;
+    font-style: italic;
 }
 
-.bouton {
-    display: inline-block;
-    background-color: #204b39;
-    color: white;
-    text-decoration: none;
-    padding: 12px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.bouton:hover {
-    background-color: #367357;
-}
-
-/* Section À propos */
-.apropos {
-    text-align: center;
-    padding: 30px 20px 10px;
-}
-
-.apropos h2 {
-    margin-bottom: 12px;
-}
-
-.apropos p {
-    max-width: 650px;
-    margin: auto;
-    line-height: 1.6;
-    color: #777064;
-}
-
-/* Catalogue */
-.produits {
-    padding: 25px 4%;
-    text-align: center;
-}
-
-.produits h2 {
-    font-size: 26px;
-    margin-bottom: 12px;
-}
-
-.conteneur-cartes {
+.nav-links {
     display: flex;
-    justify-content: center;
+    align-items: center;
     gap: 15px;
-    flex-wrap: wrap;
+    list-style: none;
 }
 
-.carte {
-    background-color: white;
-    border: 1px solid #dedbd4;
-    border-radius: 9px;
-    padding: 10px;
-    flex: 1 1 220px;
-    max-width: 300px;
+.nav-links a {
+    color: white;
+    padding: 13px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-.illustration {
-    height: 105px;
+.nav-links a:hover,
+.nav-links .active {
+    background: #f5bd19;
+    color: #063c20;
+}
+
+
+/* =========================
+   BANNIERE PRINCIPALE
+========================= */
+
+.hero {
+    width: 100%;
+    height: 390px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: block;
+    border-bottom: 5px solid #e6ad13;
+    background-color: #f5d18a;
+}
+
+.hero-banner {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* =========================
+   TITRES DE SECTIONS
+========================= */
+
+.section-title {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 48px;
-    border-radius: 5px;
-    margin-bottom: 8px;
+    gap: 25px;
+    margin-bottom: 18px;
 }
 
-.mode {
-    background-color: #e8c69e;
+.section-title span {
+    flex: 1;
+    max-width: 250px;
+    height: 2px;
+    background: #07502a;
 }
 
-.artisanat {
-    background-color: #d9c8af;
+.section-title h2 {
+    font-family: Georgia, serif;
+    color: #064421;
+    font-size: 30px;
+    white-space: nowrap;
 }
 
-.local {
-    background-color: #dce1c8;
-}
 
-.carte h3 {
-    margin-bottom: 8px;
-}
+/* =========================
+   A PROPOS
+========================= */
 
-.carte p {
-    color: #777064;
-    font-size: 14px;
-    margin-bottom: 8px;
-}
-
-.carte span {
-    font-weight: bold;
-    color: #204b39;
-}
-
-/* Contact */
-.contact {
+.about {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 20px 20px;
     text-align: center;
-    padding: 15px 20px;
 }
 
-.contact h2 {
-    font-size: 20px;
-    margin-bottom: 5px;
+.about p {
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
 }
 
-.contact p {
-    color: #777064;
+.about .slogan {
+    color: #07502a;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 8px;
 }
 
-/* Pied de page */
+
+/* =========================
+   PRODUITS
+========================= */
+
+.products {
+    max-width: 1350px;
+    margin: auto;
+    padding: 20px 30px 40px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+    border: 1px solid #ddd8cb;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+}
+
+.product-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-info h3 {
+    color: #064421;
+    font-family: Georgia, serif;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.product-info p {
+    color: #444;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.product-bottom strong {
+    color: #064421;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.buy-button {
+    background: #064421;
+    color: white;
+    padding: 11px 13px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.buy-button:hover {
+    background: #eebc18;
+    color: #063c20;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    background: #063c20;
+    color: white;
+    border-top: 5px solid #eebc18;
+    padding: 30px 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    text-align: center;
+}
+
+.contact-item h3 {
+    color: #f5c32a;
+    font-family: Georgia, serif;
+    margin-bottom: 10px;
+}
+
+.contact-item p,
+.contact-item a {
+    color: white;
+    font-size: 14px;
+}
+
+.contact-item a:hover {
+    color: #f5c32a;
+}
+
+
+/* =========================
+   PIED DE PAGE
+========================= */
+
 footer {
-    background-color: #204b39;
+    background: #022b16;
     color: white;
     text-align: center;
-    padding: 12px;
+    padding: 20px;
+    border-top: 3px solid #eebc18;
 }
 
-/* Adaptation aux téléphones */
-@media screen and (max-width: 600px) {
+footer p + p {
+    color: #f5c32a;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media screen and (max-width: 950px) {
+
     .navbar {
         flex-direction: column;
-        gap: 15px;
+        padding: 18px;
     }
 
-    .menu {
-        gap: 15px;
+    .nav-links {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .accueil h1 {
-        font-size: 27px;
+    /* Bannière sur tablette */
+    .hero {
+        height: 300px;
     }
 
-    .accueil p {
-        font-size: 16px;
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .logo-text {
+        font-size: 28px;
     }
 
-    .carte {
-        max-width: 100%;
+    .nav-links {
+        gap: 8px;
+    }
+
+    .nav-links a {
+        padding: 9px;
+        font-size: 12px;
+    }
+
+    /* Bannière sur téléphone */
+    .hero {
+        height: 220px;
+    }
+
+    .section-title {
+        gap: 10px;
+    }
+
+    .section-title h2 {
+        font-size: 23px;
+    }
+
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card img {
+        height: 220px;
+    }
+
+    .contact {
+        flex-direction: column;
     }
 }
