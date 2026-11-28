@@ -1,91 +1,232 @@
 
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AfriShop - Site vitrine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="AfriShop : découvrez des produits africains authentiques, artisanaux et locaux.">
+
+    <title>AfriShop - Le meilleur de l'Afrique</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- En-tête et menu de navigation -->
-    <header>
-        <nav class="navbar">
-            <h2 class="logo">AfriShop</h2>
+    <!-- BARRE DE NAVIGATION -->
+    <header class="header">
 
-            <ul class="menu">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#produits">Produits</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav class="navbar">
+
+            <a href="#accueil" class="logo">
+
+                <span class="africa-icon">🌍</span>
+
+                <span class="logo-text">
+                    Afri<span>Shop</span>
+                    <small>Le meilleur de l'Afrique</small>
+                </span>
+
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#accueil" class="active">⌂ Accueil</a></li>
+                <li><a href="#apropos">ⓘ À propos</a></li>
+                <li><a href="#produits">🛒 Produits</a></li>
+                <li><a href="#contact">✉ Contact</a></li>
             </ul>
+
         </nav>
+
     </header>
 
-    <!-- Section d'accueil -->
-    <section class="accueil" id="accueil">
-        <h1>Découvrez le savoir-faire africain</h1>
+    <main>
 
-        <p>Des produits authentiques, locaux et de qualité.</p>
+        <!-- BANNIERE PRINCIPALE -->
+        <section class="hero" id="accueil">
 
-        <a href="#produits" class="bouton">
-            Découvrir nos produits
-        </a>
-    </section>
+            <img
+                src="images/banniere-africaine.png"
+                alt="Découvrez le savoir-faire africain"
+                class="hero-banner">
 
-    <!-- Section À propos -->
-    <section class="apropos" id="apropos">
-        <h2>À propos d'AfriShop</h2>
+        </section>
 
-        <p>
-            AfriShop met en valeur le savoir-faire africain
-            à travers une sélection de produits authentiques,
-            artisanaux et locaux.
-        </p>
-    </section>
 
-    <!-- Catalogue des produits -->
-    <section class="produits" id="produits">
-        <h2>Nos produits</h2>
+        <!-- PRESENTATION -->
+        <section class="about" id="apropos">
 
-        <div class="conteneur-cartes">
-
-            <div class="carte">
-                <div class="illustration mode">👕</div>
-                <h3>Mode africaine</h3>
-                <p>Chemise africaine authentique.</p>
-                <span>15 000 FCFA</span>
+            <div class="section-title">
+                <span></span>
+                <h2>À propos d'AfriShop</h2>
+                <span></span>
             </div>
 
-            <div class="carte">
-                <div class="illustration artisanat">🧺</div>
-                <h3>Artisanat</h3>
-                <p>Panier artisanal fait à la main.</p>
-                <span>8 000 FCFA</span>
+            <p>
+                AfriShop est un site vitrine qui met en valeur
+                le savoir-faire africain à travers une sélection
+                de produits authentiques, artisanaux et locaux.
+            </p>
+
+            <p class="slogan">
+                Achetez africain, soutenez nos talents !
+            </p>
+
+        </section>
+
+
+        <!-- CATALOGUE DES PRODUITS -->
+        <section class="products" id="produits">
+
+            <div class="section-title">
+                <span></span>
+                <h2>Nos produits</h2>
+                <span></span>
             </div>
 
-            <div class="carte">
-                <div class="illustration local">☕</div>
-                <h3>Produits locaux</h3>
-                <p>Café local de qualité.</p>
-                <span>5 000 FCFA</span>
+            <div class="product-container">
+
+                <!-- PRODUIT 1 : CHEMISE -->
+                <article class="product-card">
+
+                    <img
+                        src="images/chemise-wax.png"
+                        alt="Chemise africaine en tissu wax">
+
+                    <div class="product-info">
+
+                        <h3>👕 Mode africaine</h3>
+
+                        <p>Chemise en tissu wax authentique.</p>
+
+                        <div class="product-bottom">
+
+                            <strong>15 000 FCFA</strong>
+
+                            <a
+                                href="mailto:dabstyle@afrishop.com?subject=Commande%20chemise%20africaine"
+                                class="buy-button">
+                                🛒 Commander
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUIT 2 : PANIER -->
+                <article class="product-card">
+
+                    <img
+                        src="images/panier-artisanal.png"
+                        alt="Panier artisanal africain">
+
+                    <div class="product-info">
+
+                        <h3>🧺 Artisanat</h3>
+
+                        <p>Panier tressé à la main.</p>
+
+                        <div class="product-bottom">
+
+                            <strong>8 000 FCFA</strong>
+
+                            <a
+                                href="mailto:dabstyle@afrishop.com?subject=Commande%20panier%20artisanal"
+                                class="buy-button">
+                                🛒 Commander
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUIT 3 : CAFE -->
+                <article class="product-card">
+
+                    <img
+                        src="images/cafe-africain.png"
+                        alt="Café africain de qualité">
+
+                    <div class="product-info">
+
+                        <h3>☕ Produits locaux</h3>
+
+                        <p>Café local de qualité.</p>
+
+                        <div class="product-bottom">
+
+                            <strong>5 000 FCFA</strong>
+
+                            <a
+                                href="mailto:dabstyle@afrishop.com?subject=Commande%20cafe%20africain"
+                                class="buy-button">
+                                🛒 Commander
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
             </div>
 
-        </div>
-    </section>
+        </section>
 
-    <!-- Section contact -->
-    <section class="contact" id="contact">
-        <h2>Contactez-nous</h2>
-<p><a href="mailto:dabstyle@afrishop.com">dabstyle@afrishop.com</a></p>
-    </section>
 
-    <!-- Pied de page -->
+        <!-- CONTACT -->
+        <section class="contact" id="contact">
+
+            <div class="contact-item">
+
+                <h3>📍 Notre adresse</h3>
+
+                <p>Douala, Cameroun</p>
+
+            </div>
+
+            <div class="contact-item">
+
+                <h3>✉ Contactez-nous</h3>
+
+                <p>
+                    <a href="mailto:dabstyle@afrishop.com">
+                        dabstyle@afrishop.com
+                    </a>
+                </p>
+
+            </div>
+
+            <div class="contact-item">
+
+                <h3>Suivez-nous</h3>
+
+                <p>Facebook · Instagram · YouTube</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIED DE PAGE -->
     <footer>
+
         <p>© 2026 AfriShop — Tous droits réservés</p>
+
+        <p>Le meilleur de l'Afrique chez vous !</p>
+
     </footer>
 
 </body>
+
 </html>
