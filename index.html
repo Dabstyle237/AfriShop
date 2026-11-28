@@ -4,24 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AfriShop</title>
+    <title>AfriShop - Site vitrine</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <!-- En-tête et menu de navigation -->
     <header>
-        <nav>
-            <h2>AfriShop</h2>
-            <ul>
+        <nav class="navbar">
+            <h2 class="logo">AfriShop</h2>
+
+            <ul class="menu">
                 <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
                 <li><a href="#produits">Produits</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <h1>Bienvenue sur AfriShop</h1>
-    <p>Découvrez nos produits africains.</p>
+    <!-- Section d'accueil -->
+    <section class="accueil" id="accueil">
+        <h1>Découvrez le savoir-faire africain</h1>
+
+        <p>Des produits authentiques, locaux et de qualité.</p>
+
+        <a href="#produits" class="bouton">
+            Découvrir nos produits
+        </a>
+    </section>
+
+    <!-- Section À propos -->
+    <section class="apropos" id="apropos">
+        <h2>À propos d'AfriShop</h2>
+
+        <p>
+            AfriShop met en valeur le savoir-faire africain
+            à travers une sélection de produits authentiques,
+            artisanaux et locaux.
+        </p>
+    </section>
+
+    <!-- Catalogue des produits -->
+    <section class="produits" id="produits">
+        <h2>Nos produits</h2>
+
+        <div class="conteneur-cartes">
+
+            <div class="carte">
+                <div class="illustration mode">👕</div>
+                <h3>Mode africaine</h3>
+                <p>Chemise africaine authentique.</p>
+                <span>15 000 FCFA</span>
+            </div>
+
+            <div class="carte">
+                <div class="illustration artisanat">🧺</div>
+                <h3>Artisanat</h3>
+                <p>Panier artisanal fait à la main.</p>
+                <span>8 000 FCFA</span>
+            </div>
+
+            <div class="carte">
+                <div class="illustration local">☕</div>
+                <h3>Produits locaux</h3>
+                <p>Café local de qualité.</p>
+                <span>5 000 FCFA</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section contact -->
+    <section class="contact" id="contact">
+        <h2>Contactez-nous</h2>
+        <p>contact@afrishop.example</p>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2026 AfriShop — Tous droits réservés</p>
+    </footer>
 
 </body>
 </html>
